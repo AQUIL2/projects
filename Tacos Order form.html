@@ -1,97 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: Thistle;
+            background-image: url("C:/Users/USER/Downloads/TACOS.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
 
-<table>
-    <tbody><tr>
-      <body style=" background-color:Thistle"> 
-	  <td> 	 
-	  
-	  <style>body{background-image: url(C:\Users\USER\Downloads\TACOS.webp);
-}</style>
-<style="align:center;">
- <img src="Taco-Bell-.jpg"  style="width:500; height:200;">
- <FORM>
-    <label style="background-color:Lavender">First Name:</label>
-    <input type="text"><br><br>
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            display: inline-block;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
 
-    <label style="background-color:Lavender">Last Name:</label>
-    <input type="text"><br><br>
+        img {
+            width: 500px;
+            height: 200px;
+            display: block;
+            margin: 0 auto;
+        }
 
-    <label style="background-color:Lavender">Address:</label>
-    <input type="email"><br><br>
+        form {
+            text-align: left;
+        }
 
-    <label style="background-color:Lavender">Contact Number:</label>
-    <input type="tel"><br><br>
+        label {
+            display: inline-block;
+            width: 200px;
+            margin-bottom: 10px;
+            background-color: Lavender;
+            padding: 5px;
+            border-radius: 5px;
+        }
 
-    <label style="background-color:Lavender">Preferred Delivery Date:</label>
-    <input type="date"><br><br>
+        input, select, textarea {
+            width: 200px;
+            margin-bottom: 15px;
+        }
 
-    <label>Size:</label>
-    <input type="radio" name="size" value="small"> Small
-    <input type="radio" name="size" value="medium"> Medium
-    <input type="radio" name="size" value="large"> Large<br><br>
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+        }
 
-    <label>Flavor:</label><br>
-    <input type="checkbox" name="flavor" value="hawaiian"> KOREAN TACOS (Php 150.00) 
-    <select><option value="1">1
-    </option><option value="2">2
-    </option><option value="3">3
-    </option><option value="4">4
-    </option><option value="5">5
-    </option><option value="6">6
-    </option><option value="7">7
-    </option><option value="8">8
-    </option><option value="9">9
-    </option><option value="10">10
-    </option>
-    </select>
-    <br>
-    <input type="checkbox" name="flavor" value="pepperoni"> CARNE ASADA (Php 140.00)
-        <select><option value="1">1
-    </option><option value="2">2
-    </option><option value="3">3
-    </option><option value="4">4
-    </option><option value="5">5
-    </option><option value="6">6
-    </option><option value="7">7
-    </option><option value="8">8
-    </option><option value="9">9
-    </option><option value="10">10
-    </option>
-    </select>
-    <br>
-    <input type="checkbox" name="flavor" value="vegetable"> GROUND BEEF (Php 130.00)
-        <select><option value="1">1
-    </option><option value="2">2
-    </option><option value="3">3
-    </option><option value="4">4
-    </option><option value="5">5
-    </option><option value="6">6
-    </option><option value="7">7
-    </option><option value="8">8
-    </option><option value="9">9
-    </option><option value="10">10
-    </option>
-    </select>
-    <br><br>
+        input[type="submit"] {
+            background-color: Lavender;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Taco-Bell-.jpg" alt="Taco Bell Logo">
+        <form>
+            <label>First Name:</label>
+            <input type="text"><br><br>
 
-    <label>Credit Card Number:</label>
-    <input type="text"><br><br>
+            <label>Last Name:</label>
+            <input type="text"><br><br>
 
-    <label>PIN:</label>
-    <input type="password"><br><br>
+            <label>Address:</label>
+            <input type="email"><br><br>
 
-    <label>Additional Note:</label>
-    <textarea></textarea><br><br>
+            <label>Contact Number:</label>
+            <input type="tel"><br><br>
 
-    <input type="submit" value="Submit Order">
-  </form>
-  </td>
-<td align="right">
-  </td>
-</tr>
-<tr>
-  <td colspan="2">
-  </td>
-</tr>
-</tbody></table>
-</h1>
-</style="align:center;">
+            <label>Preferred Delivery Date:</label>
+            <input type="date"><br><br>
+
+            <label>Size:</label>
+            <input type="radio" name="size" value="small"> Small
+            <input type="radio" name="size" value="medium"> Medium
+            <input type="radio" name="size" value="large"> Large<br><br>
+
+            <label>Flavor:</label><br>
+            <input type="checkbox" name="flavor" value="hawaiian"> KOREAN TACOS (Php 150.00) 
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br>
+
+            <input type="checkbox" name="flavor" value="pepperoni"> CARNE ASADA (Php 140.00)
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br>
+
+            <input type="checkbox" name="flavor" value="vegetable"> GROUND BEEF (Php 130.00)
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option
